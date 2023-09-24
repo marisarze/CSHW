@@ -14,7 +14,6 @@
 
 
 float a = 0.0f, b = 0.0f;
-// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Please, input numbers");
 Console.WriteLine("first number: ");
 a = Single.Parse(Console.ReadLine());
