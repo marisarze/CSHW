@@ -1,14 +1,14 @@
 ﻿void max_min_report(float a, float b){
     if (a>b) {
-        Console.WriteLine("Number {0} greater than number {1}", a, b);        
+        Console.WriteLine("First number {0} is greater than second number {1}", a, b);        
     } 
     else if (a<b) 
     {
-        Console.WriteLine("Number {0} greater than number {1}", b, a);
+        Console.WriteLine("First number {0} is greater than second number {1}", a, b);
     } 
     else 
     {
-        Console.WriteLine("Number {0} equal to number {1}", a, b);
+        Console.WriteLine("First number {0} is equal to second number {1}", a, b);
     };
 };
 
