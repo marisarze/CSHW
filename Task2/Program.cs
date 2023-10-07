@@ -1,4 +1,4 @@
-﻿void max_min_report(float a, float b){
+﻿void MaxMinReport(int a, int b){
     if (a>b) {
         Console.WriteLine("First number {0} is greater than second number {1}", a, b);        
     } 
@@ -13,11 +13,11 @@
 };
 
 
-float a = 0.0f, b = 0.0f;
+int a = 0, b = 0;
 Console.WriteLine("Please, input numbers");
 Console.WriteLine("first number: ");
-a = Single.Parse(Console.ReadLine());
+a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("second number: ");
-b = Single.Parse(Console.ReadLine());
-max_min_report(a, b);
+b = Convert.ToInt32(Console.ReadLine());
+MaxMinReport(a, b);
 
