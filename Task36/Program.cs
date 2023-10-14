@@ -1,13 +1,7 @@
 ﻿using System;
 
 void OutputArray(int[] input){
-    for (int index=0;index<input.Length;index++){
-        if (index!=input.Length-1)
-            Console.Write("{0}, ", input[index]);
-        else
-            Console.Write("{0}", input[index]);
-    }
-    Console.Write(" -> [");
+    Console.Write("[");
     for (int index=0;index<input.Length;index++){
         if (index!=input.Length-1)
             Console.Write("{0}, ", input[index]);

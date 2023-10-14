@@ -1,18 +1,12 @@
 ﻿using System;
 
 void OutputArray(float[] input){
+    Console.Write("[");
     for (int index=0;index<input.Length;index++){
         if (index!=input.Length-1)
-            Console.Write("{0}, ", input[index]);
+            Console.Write("{0:##.##}, ", input[index]);
         else
-            Console.Write("{0}", input[index]);
-    }
-    Console.Write(" -> [");
-    for (int index=0;index<input.Length;index++){
-        if (index!=input.Length-1)
-            Console.Write("{0}, ", input[index]);
-        else
-            Console.Write("{0}", input[index]);
+            Console.Write("{0:##.##}", input[index]);
     }
     Console.WriteLine("]");
 };
@@ -46,4 +40,4 @@ OutputArray(m);
 
 float difference = GetMax(m) - GetMin(m);
 
-Console.Write("Difference between max and min value of the matrix is {0}", difference);
+Console.Write("Difference between max and min value of the matrix is {0:##.##}", difference);
